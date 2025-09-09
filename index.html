@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GitHub Profile Search</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200 min-h-screen flex items-center justify-center p-6">
+
+  <main class="w-full max-w-5xl space-y-6">
+
+    <!-- Search Card -->
+    <section class="se bg-gray-800/50 border border-gray-700 rounded-2xl shadow-lg p-6">
+      <h1 class="text-xl font-bold flex items-center gap-2">🔎 GitHub Profile Search</h1>
+      <div class="grid grid-cols-[1fr_auto] gap-3 mt-4">
+          <input type="text" name="q" placeholder="Enter GitHub username"
+                 class="inpt w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600"
+            >
+          <input type="hidden" name="type" value="users" />
+            <button type="submit"
+                  class="btn bg-green-600 hover:bg-green-700 px-6 py-3 rounded-xl font-semibold text-white">
+            Search
+          </button>
+      </div>
+    </section>
+
+    <!-- Preview Card (static example) -->
+    <section class="pcard bg-gray-800/50 border border-gray-700 rounded-2xl shadow-lg p-6">
+    </section>
+
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
